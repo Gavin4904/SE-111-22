@@ -2,11 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!-- IN DONCUMENT STYLING -->
+    <style>
+        /*in here we write css*/
+        /*Selecting in css & javascript: select specific element(s) on a page 
+            *by Element type       ex:body,div,p
+            *by ID attribute       ex:#wrpper,#nav,#footer
+            *by Class attribute    ex:com in week 3 :)
+
+            */
+
+            div{
+                border: 1px solid black;
+                padding:10px; /*adds space between content & border of element*/
+                margin:5px; /*adds space between elements*/
+            }
+
+            #nav,#footer {
+                background-color: lightgray;
+            }
+
+    </style>
 </head>
 <body>
     
+    <!-- HEADER -->
+    <h1>Gavin Stoddard</h1>
+
+    <!-- NAV -->
+    <div id="nav">
+
+        <!-- External Link: a link to a page outside of your website -->
+        <a href="http://www.themostamazingwebsiteontheinternet.com/" target="_blank">Funny Website</a>
+
+        <!-- Internal Link: a link to a page in your website -->
+        <!-- Relative Path -->
+        <a href="page2.html" target="_blank">Page Two</a>
+
+        <!-- In Page Jump Link: a link to another section within the current page -->
+        <a href="#bio">BIO</a>
+        <a href="#schools">SCHOOLS</a>
+        <a href="#hobbies">HOBBIES</a>
+        <a href="#footer">Bottom of Page</a>
+
+    </div>
+
+    <!-- BIO -->
+    <div id="bio">
+
+        <h2>About Me</h2>
+
+        <p>My name is Gavin Stoddard. 
+            I am a meat cutter, and I am 18 years old. Some of my hobbies include working on my car and photography. 
+            I am currently a student at New England Institute of Technology in the Cyber Security Program.</p>
+            <a href="http://www.themostamazingwebsiteontheinternet.com/" target="_blank">Funny Website :D</a>
+        
+        <!-- Remote Image Links (absolite paths) Not Good -->
+        <img src="https://www.adorama.com/images/Large/cark1.jpg" alt="Canon Eos R" style="width:200px" title="Canon Eos R">
+
+        <!-- RELITIVE IMAGE LINK (IN ROOT FOLDER) -->
+        <img src="images/Riviera_.jpg" alt="1997 Buick Rivera Supercharged" style="width: 200px">
+
+    </div>
+
+    <!-- SCHOOLS -->
+    <div id="schools">
+        <h2>Schools</h2>
+        <ol>
+            <li><b>NEIT</b></li>
+            <li><i>NFA</i></li>
+            <li><u>VES</u></li>
+        </ol>
+        <img src="images/NFA_Logo.jpeg" alt="MECA" style="width: 191px">
+    <hr>
+
+    </div>
+
+    <!-- HOBBIES -->
+    <div id="hobbies">
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Working on Cars</li>
+            <li>Photography</li>
+            <li>Video Games</li>
+        </ul>
+
+    </div>
+
+    <!-- FOOTER -->
+    
+    <div id="footer">
+
+        <a href="#nav">Back to Top </a>
+        <br>
+        <p>&copy; G Stoddard | SE111 | Winter 2023</p>
+        <br>
+        <!-- Validation Screenshot -->
+        <img src="images/Validation.png" alt="Validation" style="width: 191px">
+    </div>
 </body>
-</html>
