@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Gavin Stoddard">
+    <meta name="w5 demo" content="Form">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+    <h2>Form Without Table</h2>
+
+    <form method="" action="">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <hr>
+
+    <h2>Form With Table </h2>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="first">First Name:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="first">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="last">Last Name:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="last">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable for="comments">Comments:</lable>
+                    </td>
+
+                    <td>
+                        <textarea name="comments"
+                        id="comments" placeholder="Leave Comment Here.." rows="10" cols="21"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="favecolor">Pick Your Favorite Color:</label>
+                    </td>
+
+                    <td>
+                        <select name="favecolor">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="study">Program of Study</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="study" value="SE">Software Engineering <br>
+                        <input type="radio" name="study" value="CYB">Cybersecurity<br>
+                        <input type="radio" name="study" value="NE">Networking<br>
+                        <input type="radio" name="study" value="WD">Web Development<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="vehicle">Select Your Vehicle(s)</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">Car<br>
+                        <input type="checkbox" name="vehicle2" value="Truck">Truck<br>
+                        <input type="checkbox" name="vehicle3" value="van">Van<br>
+                        <input type="checkbox" name="vehicle4" value="Compact">Compact<br>
+                        <input type="checkbox" name="vehicle5" value="bus">Bus<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+
+                    <td>
+                        <input type="submit" value="SUBMIT">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>
