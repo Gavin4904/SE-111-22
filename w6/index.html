@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Gavin Stoddard" content="Pay Calc">
+    <title>W6 | Pay Calc JS</title>
+
+</head>
+<body>
+    <h1>Week 6  | Pay Calculator Javascript</h1>
+    <script>
+        var rate=(prompt(`Hourly Wage`))
+        var hours=(prompt(`How Many Hours Have You Worked per Week?`))
+        var tax=(prompt(`What Precent do you lose in Taxes %?`))
+        var payPeriod=(prompt(`How Often in Weeks do you get Paid?`))
+
+        var gross=(rate*hours)*payPeriod
+        var tax=tax/100
+        var taxAmnt=gross*tax
+        var netPay=gross-taxAmnt
+
+        alert(`Your Gross Pay is \n${gross}!`)
+        alert(`Your Total Amount Lost to Taxes is \n${taxAmnt}!`)
+        alert(`Your Net Pay is \n${netPay}!`)
+        
+        
+        
+    </script>
+</body>
+</html>
