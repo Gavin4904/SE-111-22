@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Gavin Stoddard" content="Pay Calc">
-    <title>W6 | Pay Calc JS</title>
+    <title>W6 | Pay Calculator JS</title>
 
 </head>
 <body>
@@ -21,11 +21,9 @@
         var taxAmnt=gross*tax
         var netPay=gross-taxAmnt
 
-        alert(`Your Gross Pay is \n${gross}!`)
-        alert(`Your Total Amount Lost to Taxes is \n${taxAmnt}!`)
-        alert(`Your Net Pay is \n${netPay}!`)
-        
-        
+        alert(`Your Gross Pay is \n$${gross.toFixed(2)}`)
+        alert(`Your Total Amount Lost to Taxes is \n$${taxAmnt.toFixed(2)}`)
+        alert(`Your Net Pay is \n$${netPay.toFixed(2)}`)
         
     </script>
 </body>
